@@ -22,7 +22,7 @@ output "bucket_name" {
 resource "null_resource" "copy_to_s3" {
   provisioner "local-exec" {
     command = <<-EOT
-      aws s3 cp terraform.tfstate s3://yoyoserry/    #${var.existing_bucket_name}/
+      aws s3 cp terraform.tfstate s3://yoyoserry/    
     EOT
   }
 }
