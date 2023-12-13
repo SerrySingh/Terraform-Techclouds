@@ -9,7 +9,7 @@
 
 # Create a new S3 bucket
 resource "aws_s3_bucket" "my_bucket" {
-  bucket = "serrylalotra"  #var.bucket_name  # Change this to your desired new bucket name
+  bucket = "serrylalotra1"  #var.bucket_name  # Change this to your desired new bucket name
 
 }
 
@@ -18,10 +18,10 @@ output "bucket_name" {
 }
 
 # Run AWS CLI commands to copy terraform.tfstate to an existing S3 bucket
-resource "null_resource" "copy_to_s3" {
-  provisioner "local-exec" {
-    command = <<-EOT
-      aws s3 cp terraform.tfstate s3://yoyoserry/    
-    EOT
-  }
-}
+#resource "null_resource" "copy_to_s3" {
+ # provisioner "local-exec" {
+  #  command = <<-EOT
+   #   aws s3 cp terraform.tfstate s3://yoyoserry/    
+    #EOT
+ # }
+# }
