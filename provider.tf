@@ -9,7 +9,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "serrylalotra1"
+    bucket = "yoyoserry"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
