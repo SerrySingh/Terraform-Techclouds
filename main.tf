@@ -11,6 +11,7 @@
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "serrylalotra1"  #var.bucket_name  # Change this to your desired new bucket name
 
+
 }
 
 output "bucket_name" {
