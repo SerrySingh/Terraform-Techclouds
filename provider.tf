@@ -8,7 +8,7 @@ terraform {
 
   required_version = ">= 1.2.0"
   backend "s3" {
-    bucket = "jenkns-bckt-3"
+    bucket = "serrylalotra1"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
